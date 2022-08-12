@@ -1,0 +1,203 @@
+* {
+  font-family: Helvetica;
+}
+
+.App {
+  height: 100%;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-body {
+  min-height: 1000px;
+  background: white url('./Image/background.jpeg') center/100% 100% no-repeat;
+}
+
+.App-logo {
+  height: 7vmin;
+  pointer-events: none;
+  margin: 5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(3px + 2vmin);
+  color: white;
+}
+
+.App-header>div>h1 {
+  margin: 10px;
+  font-weight: bolder;
+}
+
+.App-header>div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.App-header>div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.divider:after,
+.divider:before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+.background {
+  /* background: white url('./Image/background.jpeg') center/100% 100% no-repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.View-div {
+  background-attachment: fixed;
+  /* background: white url('./Image/background.jpeg') center/100% 100% no-repeat; */
+  height: 90vh;
+}
+
+.View-div>div {
+  margin-top: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0px 10px;
+  background-color: white;
+  opacity: .9;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.View-div>div>* {
+  margin: 20px auto;
+}
+
+.View-div>div>div>div>p {
+  display: inline-block;
+  width: 250px;
+}
+
+.View-div>div>div>div>p:first-child {
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.View-div>div>div>img {
+  margin: 20px 13px 0px;
+}
+
+.View-div>div>div>img {
+  margin: 10px auto;
+}
+
+.Dashboard-card {
+  height: 400px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Dashboard-form {
+  margin: 75px 22px 0px 22px;
+  height: 400px;
+  width: 250px;
+}
+
+.Dashboard-form>form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Dashboard-form>form>input {
+  width: 90%;
+}
+
+.Dashboard-form>form>textarea {
+  width: 90%;
+  height: 150px;
+}
+
+.cardImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.Card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Delete {
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 2em;
+  color: darkblue;
+}
+
+.Edit-div {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px auto;
+  background-color: white;
+  opacity: .9;
+}
+
+.Submit {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.Input {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 100%;
+  font-weight: bold;
+  font-size: calc(5px + 2vmin);
+}
+
+.Input>textarea {
+  height: 100px;
+}
