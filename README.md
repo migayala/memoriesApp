@@ -1,8 +1,12 @@
-Travel Memories CRUD App
+This was my last project for a bootcamp I attended in 2022.
 
-- App was created using React, Express, Node.js, and MongoDB. 
+* App was created using
+  * React
+  * Express
+  *  Node.js
+  *  MongoDB
 
-Functionalities include:
+Functionalities include
 - Login / Registration
   - Creating users and storing data in backend
 - Form creation
